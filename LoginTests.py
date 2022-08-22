@@ -11,10 +11,9 @@ driver.get("https://opensource-demo.orangehrmlive.com/")
 driver.implicitly_wait(3)
 
 login: Login = Login(driver=driver)
-#main_page = MainPage(driver=driver)
+# main_page = MainPage(driver=driver)
 
 login.enter_username("Admin")
 login.enter_password("admin123")
 login.click_on_login_button()
-#sleep(3)
-
+# sleep(3)
