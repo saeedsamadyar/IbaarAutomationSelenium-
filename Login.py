@@ -13,5 +13,3 @@ class Login:
 
     def click_on_login_button(self):
         self.driver.find_element('xpath', self.submit_button_xpath).click()
-
-
