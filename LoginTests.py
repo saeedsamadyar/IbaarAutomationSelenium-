@@ -9,11 +9,9 @@ driver = webdriver.Chrome(executable_path="/home/myubunto/Downloads/chromedriver
 driver.get("https://opensource-demo.orangehrmlive.com/")
 driver.implicitly_wait(3)
 
-login = Login(driver=driver)
+login: Login = Login(driver=driver)
 
 login.enter_username("Admin")
 login.enter_password("admin123")
 login.click_on_login_button()
 sleep(3)
-
-
