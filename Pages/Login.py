@@ -1,3 +1,5 @@
+from Locators import *
+
 class Login:
     def __init__(self, driver):
         self.username_textbox_xpath = "//input[@placeholder='Username']"
