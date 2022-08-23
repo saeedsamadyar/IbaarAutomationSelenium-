@@ -1,12 +1,9 @@
 class Login:
     def __init__(self, driver):
-        #self.username_textbox_xpath = "//input[contains(@class,'jss1789 jss1773')]"
-        #self.password_textbox_xpath = "//input[@type='password']"
-        #self.submit_button_xpath = "//button[@type='submit']//span"
 
-        self.username_textbox_xpath = "//input[@type='password']"
-        self.password_textbox_xpath = "//button[@type='submit']//span"
-        self.submit_button_xpath = "//input[contains(@class,'jss1789 jss1773')]"
+        self.username_textbox_xpath = "//div[contains(@class,'jss1778 jss1763')]//input"
+        self.password_textbox_xpath = "(//div[contains(@class,'jss1778 jss1763')]//input)[2]"
+        self.submit_button_xpath = "//button[@type='submit']//span"
         self.driver = driver
 
     def enter_username(self, username):
@@ -15,5 +12,5 @@ class Login:
     def enter_password(self, password):
         self.driver.find_element('xpath', self.password_textbox_xpath).send_keys(password)
 
-    def click_on_login_button(self):
+    def click_on_login_button(self, login):
         self.driver.find_element('xpath', self.submit_button_xpath).click()
