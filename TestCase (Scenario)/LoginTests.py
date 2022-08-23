@@ -1,5 +1,5 @@
 from selenium import webdriver
-# from webdriver.chrome import ChromeDriverManager
+#from webdriver.chrome import ChromeDriverManager
 from Pages.Login import Login
 
 driver = webdriver.Chrome(executable_path="/home/myubunto/Downloads/chromedriver_linux64/chromedriver")
