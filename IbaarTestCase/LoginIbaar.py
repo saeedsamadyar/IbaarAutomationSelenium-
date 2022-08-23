@@ -7,7 +7,7 @@ driver = webdriver.Chrome(executable_path="/home/myubunto/Downloads/chromedriver
 # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
 
 driver.get("https://front.ibaar.ir/login/")
-driver.implicitly_wait(3)
+driver.implicitly_wait(1)
 
 Login = Login(driver=driver)
 # main_page = MainPage(driver=driver)
