@@ -1,9 +1,9 @@
 class Login:
     def __init__(self, driver):
 
-        self.submit_button_xpath = "//button[@type='submit']"
-        self.password_textbox_xpath = "//input[@type='password']"
-        self.username_textbox_xpath = "//input[@placeholder='Username']"
+        self.submit_button_xpath = "//button[@id='ibaar_login']//span"
+        self.password_textbox_xpath = "ibaar_front_password"
+        self.username_textbox_xpath = "ibaar_front_username"
         self.driver = driver
 
     def enter_username(self, username):
