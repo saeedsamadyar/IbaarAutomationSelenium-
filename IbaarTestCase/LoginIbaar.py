@@ -9,7 +9,7 @@ from Pages.Login import Login
 
 
 driver = webdriver.Chrome(executable_path="/home/myubunto/Downloads/chromedriver_linux64/chromedriver")
-## driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+### driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
 
 driver.maximize_window()
 driver.get("https://front.ibaar.ir")
